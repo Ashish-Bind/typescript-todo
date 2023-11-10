@@ -44,8 +44,8 @@ const TodoItem = ({
         ) : (
           <Typography
             sx={{
-              textDecoration: todo.isCompleted && 'line-through',
-              color: todo.isCompleted && '#aeaeae',
+              textDecoration: todo.isCompleted ? 'line-through' : '',
+              color: todo.isCompleted ? '#aeaeae' : '',
             }}
           >
             {todo.title}
